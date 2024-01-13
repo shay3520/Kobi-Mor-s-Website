@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule . /index.html [L]
+  </IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType application/json .json
+  AddType text/html .html
+  AddType text/css .css
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|json)$">
+    Header set Content-Type "application/javascript"
+  </FilesMatch>
+</IfModule>

@@ -1,0 +1,137 @@
+@import "../../app.css";
+
+
+.footer{
+ border-top: 1px solid #4169E1;
+    height:40%;
+    width: 100%;
+    background-color:#FFFAF0;
+    color: black;
+     position: relative;
+    bottom: 0;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+    } 
+    
+    .right{
+        flex: 1;
+        padding: 20px;
+        @include mobile{
+            padding: 10px;
+        } 
+        @include tablet{
+            padding: 10px;
+        } 
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding-right: 40px;
+        h2{
+            margin: 0;
+            font-size: 4rem;
+            color: black;
+            font-weight:bold;
+            @include mobile{
+                font-size: 3.1rem;
+            } 
+        }
+        h3{
+            margin: 0px;
+            font-size: 2.5rem;
+            color: black;
+            font-weight:bold;
+            @include mobile{
+                font-size: 2rem;
+            } 
+        }
+        p{
+            font-size: 1.4rem;
+            margin: 0;
+            margin-top: 10px;
+           // font-weight:bold;
+           font-weight: 600;
+        }
+    }
+    .left{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        h4{
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight:bold;
+            @include mobile{
+                font-size: 2rem;
+            } 
+        }
+        button{
+            width: 80%;
+            height: 60px;
+            display: flex; /* Enable Flexbox */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            position: relative; /* Needed for absolute positioning of the icon */
+            font-size: 2rem;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+
+            @include mobile{
+                width: 90%;
+                height: 50px;
+                font-size: 1.5rem;
+                margin: 3px;
+            } 
+
+            @include tablet{
+                width: 95%;
+                font-size: 1.7rem;
+            } 
+            
+           
+            a { /* Updated to target anchor tags */
+                color: white;
+                text-decoration: none; /* Remove underline */
+                display: flex; 
+                justify-content: center; /* Center content horizontally */
+                align-items: center;
+    
+            .icon {
+                position: absolute;
+                right: 10px; /* Adjust as needed */
+                font-size: 2rem;
+                @include mobile{
+                    font-size: 1.5rem;
+                } 
+                @include tablet{
+                    font-size: 1.7rem;
+                } 
+
+            }
+        }
+
+        }
+        .phone {
+            background-color: #4169E1;   
+        }
+        .whatsapp {
+            background-color: #228B22;   
+        }
+        .email {
+            background-color: #CC0000;  
+            @include mobile{
+               margin-bottom: 10px;
+            }  
+        }
+        
+        
+        
+            
+}
+
+}

@@ -1,0 +1,118 @@
+@import "../../app.css";
+
+.header {
+    height: 100px;
+    width: 100%;
+
+    .botton{
+        .custom-navbar {
+            background-color: #FFFAF0;
+            color: white;
+            @include  mobile{
+                padding-right: 10px;
+            }
+
+            .navbar-brand {
+                font-size: 50px;
+                margin-left: 35px;
+                color: black !important;
+                font-weight:bold;
+                .ElectricalServicesIcon {
+                    font-size: 38px;
+                    
+                }
+                @include  mobile{
+                    margin-left: 2px;
+                }
+                @include  mobileMini{
+                    font-size: 35px;
+                    margin-left: 2px;
+                }
+            }
+
+            .nav-link, .nav-dropdown {
+                font-size: 28px;
+                margin-left: 30px;
+                font-weight: 600;
+                color: black;
+               
+
+                // Specific styles for dropdown toggle
+                &.dropdown-toggle {
+                    padding-right: 20px; // Adjust this for spacing between text and arrow
+
+                    &:after {
+                        margin-left: 5px; // Adjust this for spacing after the arrow
+                    }
+                }
+            }
+
+            .dropdown, .dropdown-menu {
+                text-align: right;
+
+                .dropdown-item {
+                    text-align: right;
+                    font-size: 18px;
+                }
+            }
+            .noselect {
+                -webkit-touch-callout: none;
+                  -webkit-user-select: none;
+                   -khtml-user-select: none;
+                     -moz-user-select: none;
+                      -ms-user-select: none;
+                          user-select: none;
+                      -webkit-tap-highlight-color: transparent;
+              }
+              
+              button {
+                  width: 150px;
+                  height: 50px;
+                  @include  mobile{
+                    width: 100px;
+                    height: 50px;
+                }
+                  @include  mobileMini{
+                    width: 100px;
+                    height: 50px;
+                }
+                  cursor: pointer;
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: black;
+                  background: white;
+                  margin-left: 30px;
+                  border: 2px solid black;
+                  box-shadow: 5px 5px 0 black,
+                      -5px -5px 0 black,
+                      -5px 5px 0 black,
+                      5px -5px 0 black;
+                  transition: 500ms ease-in-out;
+                  a{
+                    text-decoration: none;
+                    color: black;
+                    width: 100%;
+                    font-size: 1.1rem;
+    
+                  }
+              }
+              
+              button:hover {
+                  box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+              }
+              
+              button:focus {
+                  outline: none;
+              }
+              .name{
+                @include mobile{
+                    display: none;
+                   }
+
+                   @include tablet{
+                    display: none;
+                   }
+              }
+        }
+    }
+}

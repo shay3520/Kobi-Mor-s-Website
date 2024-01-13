@@ -1,0 +1,43 @@
+@import "../../app.css";
+
+.icon-draggable {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    left: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(36, 155, 46);
+    cursor: pointer;
+    z-index: 1000;
+    animation: shake 2s infinite; // Shake animation
+
+    @include mobile {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-phone {
+        width: 37px;
+        height: 37px;
+        color: black;
+    }
+
+    @keyframes shake {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        10%, 30%, 50%, 70%, 90% {
+            transform: translateX(-3px);
+        }
+        20%, 40%, 60%, 80% {
+            transform: translateX(3px);
+        }
+    }
+
+}

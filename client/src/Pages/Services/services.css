@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 70px;
+}
+@media (max-width: 1025px) {
+  .services {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .services {
+    margin-bottom: 0;
+  }
+}
+.services .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  background-color: #4169E1;
+  padding: 50px;
+  width: 100%;
+}
+@media (max-width: 1025px) {
+  .services .top {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .services .top {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-bottom: 20px;
+  }
+}
+.services .top h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: white;
+
+}
+@media (max-width: 1025px) {
+  .services .top h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .services .top h1 {
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 2.5rem;
+  }
+}
+.services .bottom {
+  background-color: #F5F5F5;
+  margin-bottom: 70px;
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+  /*** VARIABLES ***/
+  /* Colors */
+  /*** EXTEND ***/
+  /* box-shadow */
+  /*** STYLE ***/
+}
+.services .bottom p {
+  font-size: 1.2rem;
+}
+.services .bottom h5 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+@media (max-width: 480px) {
+  .services .bottom h5 {
+    font-size: 1.6rem;
+  }
+}
+.services .bottom ol.gradient-list > li::before, .services .bottom ol.gradient-list > li {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+.services .bottom *,
+.services .bottom *:before,
+.services .bottom *:after {
+  box-sizing: border-box;
+  right: -1rem;
+  left: auto;
+}
+.services .bottom html,
+.services .bottom body {
+  margin: 0;
+  padding: 0;
+}
+.services .bottom body {
+  background-color: #fafafa;
+  color: #1d1f20;
+  font-family: "Raleway", sans-serif;
+}
+.services .bottom main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+}
+.services .bottom ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+@media (max-width: 480px) {
+  .services .bottom ol.gradient-list {
+    padding-left: 0;
+  }
+}
+.services .bottom ol.gradient-list > li {
+  background: white;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+  padding-right: 2.5rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+.services .bottom ol.gradient-list > li::before, .services .bottom ol.gradient-list > li::after {
+  background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+  border-radius: 1rem 1rem 0 1rem;
+  content: "";
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
+.services .bottom ol.gradient-list > li::before {
+  align-items: flex-end;
+  content: counter(gradient-counter);
+  color: #1d1f20;
+  display: flex;
+  font: 900 1.5em/1 "Montserrat";
+  justify-content: flex-end;
+  padding: 0.125em 0.25em;
+  z-index: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+1):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+2):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+3):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+4):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+5):before {
+  background: linear-gradient(135deg, #a2ed56 0%, #fddc32 100%);
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+6):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+7):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+8):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+9):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+.services .bottom ol.gradient-list > li:nth-child(10n+10):before {
+  background: linear-gradient(135deg, rgba(162, 237, 86, 0) 0%, rgba(253, 220, 50, 0) 100%);
+}
+.services .bottom ol.gradient-list > li + li {
+  margin-top: 2rem;
+}/*# sourceMappingURL=services.css.map */

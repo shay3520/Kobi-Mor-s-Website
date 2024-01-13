@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+
+.footer {
+  border-top: 1px solid #4169E1;
+  height: 40%;
+  width: 100%;
+  background-color: #FFFAF0;
+  color: black;
+  position: relative;
+  bottom: 0;
+  display: flex;
+}
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+.footer .right {
+  flex: 1;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+}
+@media (max-width: 480px) {
+  .footer .right {
+    padding: 10px;
+  }
+}
+@media (max-width: 1025px) {
+  .footer .right {
+    padding: 10px;
+  }
+}
+.footer .right h2 {
+  margin: 0;
+  font-size: 3.5rem;
+  color: black;
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .footer .right h2 {
+    font-size: 3.1rem;
+  }
+}
+.footer .right h3 {
+  margin: 0px;
+  font-size: 2.5rem;
+  color: black;
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .footer .right h3 {
+    font-size: 2rem;
+  }
+}
+.footer .right p {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.footer .left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .left h4 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .footer .left h4 {
+    font-size: 2rem;
+  }
+}
+.footer .left button {
+  width: 80%;
+  height: 60px;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  position: relative; /* Needed for absolute positioning of the icon */
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .footer .left button {
+    width: 90%;
+    height: 50px;
+    font-size: 1.5rem;
+    margin: 3px;
+  }
+}
+@media (max-width: 1025px) {
+  .footer .left button {
+    width: 95%;
+    font-size: 1.7rem;
+  }
+}
+.footer .left button a { /* Updated to target anchor tags */
+  color: white;
+  text-decoration: none; /* Remove underline */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+}
+.footer .left button a .icon {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  font-size: 2rem;
+}
+@media (max-width: 480px) {
+  .footer .left button a .icon {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1025px) {
+  .footer .left button a .icon {
+    font-size: 1.7rem;
+  }
+}
+.footer .left .phone {
+  background-color: #4169E1;
+}
+.footer .left .whatsapp {
+  background-color: #228B22;
+}
+.footer .left .email {
+  background-color: #CC0000;
+}
+@media (max-width: 480px) {
+  .footer .left .email {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=footer.css.map */
